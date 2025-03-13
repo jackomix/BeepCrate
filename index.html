@@ -5,7 +5,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to BeepCrate</h1>
+    <div class="content">
+        <h1>Welcome to BeepCrate</h1>
+        <p>BeepCrate is a song manager for BeepBox and related mods. BeepCrate lets you import your bookmarks, and automatically detects and combines song versions for easier browsing. BeepCrate also comes with easy ways of searching and browsing, via aspects like BeepBox mods or even song length.</p>
+
+        <details>
+            <summary>Import bookmarks</summary>
+            <input type="file" id="bookmarkHTMLimport" accept=".html">
+        </details>
+
+        <div id="songs">
+            <div class="song">
+                <h2>Song Title</h2>
+                <p>Song info</p>
+                <a href="https://example.com/">Link</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import {diceCoefficient} from 'https://esm.sh/dice-coefficient@2?bundle'
+        window.diceCoefficient = diceCoefficient
+    </script>
+    <script src="string-similarity.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
